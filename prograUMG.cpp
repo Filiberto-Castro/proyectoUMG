@@ -217,6 +217,7 @@ int main()
                 break;
             default:
                 cout<<"Opcion invalida!!"<<endl;
+                cout<<"Vuelva a intentarlo"<<endl;
         }
     }while(opc != 5);
 }
