@@ -1,2 +1,5 @@
-Hello World!
-Hola Mundo!
+-----------------------------------------------------
+GYM.cpp es el nuevo codigo fuente de nuestro proyecto
+-----------------------------------------------------
+prograUMG.cpp ya no lo usaremos
+-----------------------------------------------------
