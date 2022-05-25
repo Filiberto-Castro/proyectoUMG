@@ -36,7 +36,7 @@ main()
 		cout<<" -----------------------"<<endl;
 		cout<<"      |            |    "<<endl;
 		cout<<"       ------------     "<<endl;
-gotoxy(9,5);cin>>cla;
+gotoxy(10,5);cin>>cla;
 
 if(cla==201302)
 {// INICIO MENU
@@ -53,7 +53,7 @@ if(cla==201302)
 		cout<<" -------------------------"<<endl;
 		cout<<"          |     |        "<<endl;
 		cout<<"           -----"<<endl;
-gotoxy(13,10);cin>>opc;
+gotoxy(13,9);cin>>opc;
 
 	switch(opc)
 	{//INICIO DE SWITCH
