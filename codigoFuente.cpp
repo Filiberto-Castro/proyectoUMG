@@ -36,7 +36,7 @@ main()
 		cout<<" -----------------------"<<endl;
 		cout<<"      |            |    "<<endl;
 		cout<<"       ------------     "<<endl;
-gotoxy(10,5);cin>>cla;
+gotoxy(9,5);cin>>cla;
 
 if(cla==201302)
 {// INICIO MENU
@@ -48,7 +48,6 @@ if(cla==201302)
 		cout<<"| 2-> |VER CLIENTES     |"<<endl;
 		cout<<"| 3-> |BUSCAR CLIENTE   |"<<endl;
 		cout<<"| 4-> |MODIFICAR DATOS  |"<<endl;
-		cout<<"| 5-> |ELIMINAR CLIENTE |"<<endl;
 		cout<<" -----------------------"<<endl;
 		cout<<"<< SELECCIONE UNA OPCION >>"<<endl;
 		cout<<" -------------------------"<<endl;
@@ -249,78 +248,6 @@ gotoxy(13,10);cin>>opc;
       		}		
       		system("pause");
 		}//FIN DE CASO 4
-		
-		
-		//INICIO CASO 5
-		case 5:
-		{
-			ELIMINAR:
-			system("cls");
-			cout<<"         ----------------> ELIMINAR CLIENTES <------------------ "<<endl;
-      		cout<<"                                                              "<<endl;
-      		cout<<"\n                           -------------------";
-      		cout<<"\n                          |  Numero:   |      |";
-      		cout<<"\n --------------------------------------------------------------"<<endl;
-      		cout<<"|       Nombres       |  Telefonos | Edad |   Fecha   |  Pago  |"<<endl;
-   			cout<<" --------------------------------------------------------------"<<endl;
-   			cout<<"|                     |            |      |           |Q.      |"<<endl;
-   			cout<<" --------------------------------------------------------------";
-   			cout<<"\n| 1. ELIMINAR - 2. REGRESAR - 3 BUSCRA OTRO|      |";
-      		cout<<"\n -------------------------------------------------";
-      		
-      		gotoxy(42,4); cin>>n1;
-      		
-			if(n1>cont||n1<1)
-      		{
-       			gotoxy(3,8); cout<<"\n OPCION NO VALIDA  ";
-      		}
-      		
-			else
-      		{
-      			gotoxy(3,8); cout<<nom[n1];
-      			gotoxy(25,8); cout<<tel[n1];
-      			gotoxy(38,8); cout<<edad[n1];
-      			gotoxy(45,8); cout<<d[n1];
-      			gotoxy(47,8); cout<<"-";
-      			gotoxy(48,8); cout<<m[n1];
-      			gotoxy(50,8); cout<<"-";
-      			gotoxy(51,8); cout<<a[n1];
-      			gotoxy(58,8); cout<<pago[n1];
-      		}
-      		
-			gotoxy(46,10); cin>>opc;
-      		
-			if(opc==1)
-      		{
-      			
-      			cout<<"CLIENTE ELIMINADO PERFECTAMENTE";
-      			cin>>nom[n1];
-      			cin>>tel[n1];
-      			cin>>edad[n1];
-      			cin>>d[n1];
-      			cin>>m[n1];
-      			cin>>a[n1];
-      			cin>>pago[n1];
-      			
-				Sleep(1500);
-       			goto MENU;
-      		}
-      		
-			else if(opc==2)
-      		{
-       			goto MENU;
-      		}
-      		
-			if(opc==3)
-      		{
-        		goto ELIMINAR;
-      		}
-      		system("pause");
-      		
-      	
-		}//FIN DE CASO 5
-		
-		
 		
 		
 	}//FIN DE SWITCH
