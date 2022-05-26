@@ -226,7 +226,8 @@ gotoxy(13,9);cin>>opc;
       		
 			  if(opc==1)
       		{
-      			gotoxy(3,11); cin>>nom[n1];
+      			fflush(stdin);
+      			gotoxy(3,11); gets(nom[n1]);
       			gotoxy(25,11); cin>>tel[n1];
       			gotoxy(38,11); cin>>edad[n1];
       			gotoxy(45,11); cin>>d[n1];
